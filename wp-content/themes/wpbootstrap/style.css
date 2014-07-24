@@ -21,6 +21,11 @@ body {
 	padding-bottom: 40px;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 .tagline {
 
 	text-align: center;
