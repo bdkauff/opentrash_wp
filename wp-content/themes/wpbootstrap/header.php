@@ -13,6 +13,12 @@
     <![endif]-->
 
     <?php wp_enqueue_script("jquery"); ?>
+    <script type="text/javascript" src="js/bootstrap-spans.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.row-spans').spans();
+    });
+</script>
     <?php wp_head(); ?>
   </head>
   <body>
