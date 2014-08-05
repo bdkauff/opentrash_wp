@@ -16,68 +16,155 @@ This is an example theme to go along with the Treehouse blog post on <a href="ht
 @import url('bootstrap/css/bootstrap.css');
 @import url('bootstrap/css/bootstrap-responsive.css');
 
+
+
 body {
+/*	font-family: lato;*/
+
 	padding-top: 40px;
 	padding-bottom: 40px;
+
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 34%, #ffffff 37%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#efefef), color-stop(37%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efefef 34%,#ffffff 37%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efefef 34%,#ffffff 37%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efefef 34%,#ffffff 37%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efefef 34%,#ffffff 37%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+.widget_recent_entries {
+
+}
+
+.widgettitle, h3, h4 {
+	font-weight: 300;
+	color:#F48131;
+}
 ul
 {
     list-style-type: none;
 }
+a {
+	color:black;
+}
+
+.row {
+	margin-bottom:5px;
+}
 
 .tagline {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
 
+.tagline h3 {
+	text-align:center;
+	font-weight: 300;
+	color: #F48131;
 	text-align: center;
 }
 
-.colorbelt {
-	background:#5E7797;
-	height:20px;
-	display: block;
-	margin-top:20px;
-	margin-bottom:20px;
+.colorbelt-strip{
+	height:10px;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
-/*.content-container {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}*/
+
+#orange {
+	background: #F48131;
+}
+#blue {
+	background: #0081C5;
+}
+#green {
+	background: #7CC25B;
+}
+
+
+
 .navbar-right {
-	padding-bottom: 60px;
+	padding-bottom: 10px;
+}
+
+.navbar .pull-right {
+	padding-top:25px;
+}
+.navbar .pull-right li {
+	font-weight: 300;
+	font-size:14px;
 }
 .navbar-inner {
-	height:80px;
-	background:#5E7797;
+	height: 80px;
+	background: white;
+}
+.navbar .nav > li > a {
+	font-weight: 300;
+	color:#F48131;
+}
+
+.navbar .brand {
+	font-size:24px;
+	color:#F48131;	
+	padding: 30px 20px 10px;
 }
 
 .featuredphoto {
-	max-height:250px;
+	max-height:247px;
 }
 
-*, *:before, *:after {box-sizing:  border-box !important;}
-
-
-.masonry-row {
- -moz-column-width: 18em;
- -webkit-column-width: 18em;
- -moz-column-gap: 1em;
- -webkit-column-gap:1em; 
-  
+.hero-unit {
+	background:white;
+	padding: 70px 0 0 0;
+	margin-bottom: 10px;
+	margin-top:30px;
 }
 
-.masonry-item {
- display: inline-block;
- padding:  .25rem;
- width:  100%; 
+/* HACK FOR WORDPRESS BUG TO HIDE "Home" PAGE FROM APPEARING IN TOP NAV LIST WHEN IT SHOULD BE EXCLUDED*/
+.navbar .nav > li:nth-child(5){
+   display:none;
 }
 
-.masonry-well {
- position:relative;
- display: block;
- background:gray;
+.below-fold-background {
+	width:1400px;
+	height:1400px;
+	background:white;
+	margin:0 -100px;
+	z-index:-1;
 }
 
+hr {
+	border-bottom:2px solid #F48131;
+}
+
+.lcp_catlist li {
+	text-align: left;
+}
+
+footer {
+	padding-top: 10px;
+
+}
+
+.logo-image {
+	max-height:40px;
+}
+
+.homepageblog {
+
+}
+
+#twitterlogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+	
 
 
 

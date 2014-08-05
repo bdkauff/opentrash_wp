@@ -13,6 +13,8 @@
     <![endif]-->
 
     <?php wp_enqueue_script("jquery"); ?>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/bootstrap-spans.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
